@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management</h1>
+        <table id="empTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Salary</th>
+                    <th>Age</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Employee list will be populated here -->
+            </tbody>
+        </table>
+        <h2>Add New Employee</h2>
+        <form id="empForm">
+            <input type="text" id="empName" placeholder="Name" required>
+            <input type="number" id="empSalary" placeholder="Salary" required>
+            <input type="number" id="empAge" placeholder="Age" required>
+            <button type="submit">Save</button>
+        </form>
+    </div>
+    <script src="employee.js"></script>
+</body>
+</html>
